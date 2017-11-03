@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- member, product, advice라는 이름으로 빈 생성 -->
+<bean id="member" class="solv2.MemberService"></bean>
+<bean id="product" class="solv2.ProductService"/>
+<bean id="advice" class="solv2.ServiceAdvice"/>
+</beans>

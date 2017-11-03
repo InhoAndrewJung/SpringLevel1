@@ -1,0 +1,10 @@
+package api5;
+
+public class DaoImpl implements Dao{
+
+	public void register() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

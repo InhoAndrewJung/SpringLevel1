@@ -1,0 +1,5 @@
+package com.kosta.di.impl;
+
+public class MessageBeanImpl {
+
+}

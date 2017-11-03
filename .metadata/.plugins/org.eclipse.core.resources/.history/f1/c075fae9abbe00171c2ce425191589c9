@@ -1,0 +1,21 @@
+package com.kosta.di.impl;
+
+import java.io.File;
+import java.io.FileWriter;
+
+import com.kosta.di.Outputer;
+
+public class FileOutputerImpl implements Outputer{
+	private String path;	
+	
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+
+	public void output(String message) {
+		//특정 파일로 message를 출력하는 기능을 작성...
+		FileWriter fw = new FileWriter(path);
+	}
+
+}

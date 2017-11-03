@@ -1,0 +1,24 @@
+package jdbc;
+/*
+ * Spring JDBC에서 제공하는 라이브러리를 이용해서 비지니스 로직을 작성
+ * SpringJdcbFramework에서 가장 핵심이 되는 클래스는 JdbcTemplate
+ */
+import java.util.List;
+
+public class MemberDaoImpl implements MemberDao{
+
+	public void register(MemberVO vo) {
+		
+	}
+
+	public List<MemberVO> getList() {
+		
+		return null;
+	}
+
+	public MemberVO getSearch(String id) {
+		
+		return null;
+	}
+
+}

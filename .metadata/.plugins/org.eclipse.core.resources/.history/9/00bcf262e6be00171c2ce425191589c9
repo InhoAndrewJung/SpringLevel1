@@ -1,0 +1,5 @@
+package di.impl;
+
+public class MessageBeanImpl {
+
+}

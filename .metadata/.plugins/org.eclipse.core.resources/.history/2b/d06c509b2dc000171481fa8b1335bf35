@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="spriing10_shopping">
+        <property name="context-root" value="spriing10_shopping"/>
+        <property name="java-output-path" value="/spriing10_shopping/build/classes"/>
+    </wb-module>
+</project-modules>

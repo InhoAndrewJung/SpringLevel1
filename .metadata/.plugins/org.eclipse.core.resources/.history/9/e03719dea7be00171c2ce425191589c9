@@ -1,0 +1,30 @@
+package com.kosta.di.impl;
+
+import com.kosta.di.MessageBean;
+
+public class MessageBeanImpl implements MessageBean{
+	private String name; // 생성자 주입(property 이용)
+	private String greeting; // setter 주입
+	
+	
+	public MessageBeanImpl(String name) {
+		super();
+		this.name = name;
+	}
+
+	public void setGreeting(String greeting) {
+		this.greeting = greeting;
+	}
+
+	public String sayHello() {
+
+		return name+greeting;
+		
+	}
+
+
+
+
+
+
+}

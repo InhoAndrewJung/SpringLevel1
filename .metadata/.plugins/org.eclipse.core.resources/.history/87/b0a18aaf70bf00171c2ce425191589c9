@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+<!-- aop 스키마 사용
+	aspect-J식 표현법을 사용 ...within()...aop3 패키지 않에 있는 모든 메소드에 위빙되도록 설정
+ -->
+ <bean id="loggingAdvice" class="api3.LoggingAdvice"/>
+ <bean id="MessageBean"	 class="api3.MessageBeanImpl"/>
+ 
+ <aop:config>
+ 	<aop:aspect id="loggingAspect" ref="loggingAdvice"></aop:aspect>
+ 	<aop:pointcut expression="within(api3..*)" id="aroundPC"/>
+ </aop:config>
+</beans>

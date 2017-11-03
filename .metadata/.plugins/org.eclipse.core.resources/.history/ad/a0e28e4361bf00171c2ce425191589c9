@@ -1,0 +1,9 @@
+package di.impl;
+
+import org.aopalliance.intercept.Invocation;
+import org.aopalliance.intercept.MethodInterceptor;
+
+public class LoggingAdvice implements MethodInterceptor{
+
+	String methodName = Invocation.getMethod().
+}

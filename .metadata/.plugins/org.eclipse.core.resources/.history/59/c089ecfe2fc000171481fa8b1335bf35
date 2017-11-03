@@ -1,0 +1,17 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+
+import logic.Item;
+
+public class ItemDaoImpl implements ItemDao {
+	private SimpleJdbcTemplate simpleJdbcTemplate;
+	
+	public List<Item> findAll() {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,21 @@
+package di.step1.test;
+
+import org.springframework.core.io.FileSystemResource;
+
+/*
+ *  DI Framework
+ */
+public class MessageBeanTest {
+
+	public static void main(String[] args) {
+		//1. 설정문서를 읽어들입니다..springframework.core.io
+		Resource = new FileSystemResource("src/bean.xml");
+		//2. 빈 팩토리 생성
+		
+		//3. 생성되어서 공장이 가지고 있는 빈을 요청 :: getBean()
+		
+		//4. 빈의 메소드를 수행...결과를 확인
+		
+	}
+
+}

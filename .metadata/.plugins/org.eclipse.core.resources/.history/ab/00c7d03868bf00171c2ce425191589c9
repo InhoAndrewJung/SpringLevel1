@@ -1,0 +1,15 @@
+package test;
+
+import org.springframework.aop.framework.ProxyFactoryBean;
+
+public class AopApiTest1 {
+
+	public static void main(String[] args) {
+		/*
+		 * ProxyFactoryBean, Target생성 추가, PointCut을 생성하고 어드바이스와 함께 추가(advisor)
+		 */
+		ProxyFactoryBean pfBean = new ProxyFactoryBean();
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package api3;
+/*
+ * advice��?�삎 ::
+ * 1) api?���? �긽�냽 --- MethodInterceptor :: arround 諛⑹?���쓽 �뼱�뱶諛붿?���뒪
+ * 2) xml�궗�슜�븿 --- aop �뒪�궎留덇�? ?��좎졇�엳�떎....only ?���? �꽕�젙�쑝濡쒕�? xml�쓣 �옉�꽦�븯�뒗 踰덇굅濡?���?
+ * 3) pointcut�쓽 �뙣�꽩�쑝濡� JDK �젙洹쒖?�� �몴�쁽踰뺤?�� �궗�슜.
+ */
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.util.StopWatch;
+
+public class LoggingAdvice  implements MethodInterceptor{
+	
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		String methodName = invocation.getMethod().getName();
+		StopWatch sw = new StopWatch();
+		sw.start(methodName);
+		
+		System.out.println("[LOG] METHOD :"+ methodName+" is calling...");
+		Object rtnObj = invocation.proceed();
+		
+		sw.stop();
+		
+		System.out.println("[LOG] METHOD :"+ methodName + " was called...");
+		System.out.println("[LOG 泥섎?���떆媛� : "+ sw.getTotalTimeMillis()/1000+ "?���?");
+		return rtnObj;
+	}
+
+}
+
+
+
+
+
+
+
+
+

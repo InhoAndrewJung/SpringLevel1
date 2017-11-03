@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="book1-4"/>
+<aop-project name="spring09_mvc"/>
+<aop-project name="spring01_di"/>
+<aop-project name="Test"/>
+<aop-project name="spring04_di"/>
+<aop-project name="spriing10_shopping"/>
+<aop-project name="spring02_di"/>
+<aop-project name="spring07_aop">
+<aspect-definition advice-class-name="api5.TimeAdvice" advice-method-name="time(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="17" aspect-name="timeAdvice" aspect-start-line-number="17" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring07_aop/src/anno5.xml" pointcut-expression="execution(* api5.Dao*.re*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:spring07_aop|3:src/anno5.xml|7:beans:8|8:target:14" bean-file="/spring07_aop/src/anno5.xml" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring07_aop/src/anno5.xml" source="=spring07_aop/src&lt;api5{TimeAdvice.java[TimeAdvice~time~QProceedingJoinPoint;" source-start-line="16" target="=spring07_aop/src&lt;api5{DaoImpl.java[DaoImpl~register" target-start-line="19"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring06_aop"/>
+<aop-project name="spring08_jdbc"/>
+</aop-reference-model>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="str" class="java.lang.String">
+		<constructor-arg value="kosta"></constructor-arg>
+	</bean>
+	<bean id="today" class="java.lang.Integer">
+		<constructor-arg value="1101"></constructor-arg>
+	</bean>
+
+	<bean id="message1" class="com.kosta.service.impl.MemberServiceImpl">
+	<constructor-arg value="123"></constructor-arg>
+	<property name="name" ref="str"></property>
+	<property name="date" ref="today"></property>
+	</bean>
+	<!-- no(기본형), name(클래스타입), date(클래스타입) :: Person p -->
+</beans>

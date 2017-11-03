@@ -1,0 +1,12 @@
+package logic;
+
+import java.util.List;
+
+public class ItemCatalogImpl implements ItemCatalog{
+	private ItemDao
+	public List<Item> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

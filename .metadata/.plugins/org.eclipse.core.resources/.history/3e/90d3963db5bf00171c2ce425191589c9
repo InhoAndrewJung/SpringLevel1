@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- api bean | user definition bean -->
+<!-- HandlerMapping -->
+<bean id="handlerMaping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+<!-- ViewResolver 등록 :: viewpage의 물리적인 위치정보를 저장. -->
+<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="view/"/>
+	<property name="suffix" value=".jsp"/>
+</bean>
+</beans>

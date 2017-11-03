@@ -1,0 +1,12 @@
+package com.kosta.di.impl;
+
+import com.kosta.di.MessageBean;
+
+public class MessageBeanImpl implements MessageBean{
+
+	public void sayHello() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

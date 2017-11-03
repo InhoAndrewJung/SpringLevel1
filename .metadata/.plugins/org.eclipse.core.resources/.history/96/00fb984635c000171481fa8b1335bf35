@@ -1,0 +1,18 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import logic.Item;
+
+public class ItemDaoImpl extends JdbcDaoSupport implements ItemDao {
+	
+	private static final String SELECT_ALL = "SELECT * FROM item";
+	
+	public List<Item> findAll() {
+		
+		return null;
+	}
+
+}

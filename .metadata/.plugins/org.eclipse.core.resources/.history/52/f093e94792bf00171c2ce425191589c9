@@ -1,0 +1,14 @@
+package jdbc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class jdbcMainTest1 {
+
+	public static void main(String[] args) {
+		ApplicationContext factory = new ClassPathXmlApplicationContext("jdbc.jdbc.xml");
+		
+
+	}
+
+}
